@@ -4,11 +4,13 @@ from config import TOKEN
 from handlers.start import start
 from keyboards import main_menu
 
+# Loglash konfiguratsiyasi
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
 
+# Barcha menyu tugmalarini handler qilish
 async def handle_menu(update, context):
     text = update.message.text
 
